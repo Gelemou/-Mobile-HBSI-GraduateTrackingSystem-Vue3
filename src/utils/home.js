@@ -74,8 +74,8 @@ export function getActivitiesGlimpse(para) {
   });
 }
 // 班级记忆 系别
-export function getMemory(para) {
-  return request({
+export async function getMemory(para) {
+  return await request({
     url: "/department/wx/getDepartmentByYear",
     method: "post",
     params: para,
