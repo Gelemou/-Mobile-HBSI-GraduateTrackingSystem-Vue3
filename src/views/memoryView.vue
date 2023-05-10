@@ -65,7 +65,6 @@ async function getMemoryFun() {
   departs.value = data.result.departmentList;
   currentDepartmentId.value = departs.value[0].departmentId;
   depart.value = departs.value[0].departmentName;
-  console.log(depart.value);
   getMemoryClassFun();
 }
 
